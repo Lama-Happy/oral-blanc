@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rimbaud — Le dormeur du Val</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bg:#f5f3ee;--surface:#faf9f6;--ink:#1a1916;--ink-muted:#6b6760;--ink-faint:#c2bfb8;--rule:#e0ddd6;--serif:'Libre Baskerville',Georgia,serif;--sans:'DM Sans',sans-serif; }
+  html,body { background:var(--bg);color:var(--ink);font-family:var(--sans);min-height:100vh; }
+  nav { padding:16px 40px;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:16px; }
+  nav a { font-size:13px;color:var(--ink-muted);text-decoration:none;transition:color .15s; }
+  nav a:hover { color:var(--ink); }
+  .nav-sep { color:var(--ink-faint);font-size:13px; }
+  .nav-current { font-size:13px;color:var(--ink);font-style:italic;font-family:var(--serif); }
+  main { max-width:720px;margin:0 auto;padding:48px 40px 80px; }
+  .texte-header { margin-bottom:36px; }
+  .texte-oeuvre { font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px; }
+  .texte-titre { font-family:var(--serif);font-size:24px;font-weight:400;font-style:italic;color:var(--ink);line-height:1.3;margin-bottom:6px; }
+  .texte-auteur { font-size:13px;color:var(--ink-muted);font-weight:300; }
+  .section-label { font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:500;margin-bottom:12px; }
+  .extrait { background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--ink-muted);border-radius:0 6px 6px 0;padding:24px 28px;margin-bottom:40px;font-family:var(--serif);font-size:15px;line-height:1.9;color:var(--ink);white-space:pre-wrap; }
+  .sep { border:none;border-top:1px solid var(--rule);margin:32px 0; }
+  .section { margin-bottom:28px; }
+  .section-title { font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:500;margin-bottom:14px;display:flex;align-items:center;gap:10px; }
+  .section-title::after { content:'';flex:1;height:1px;background:var(--rule); }
+  .card { background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px 20px;margin-bottom:10px; }
+  .card-head { font-size:13px;font-weight:500;color:var(--ink);margin-bottom:8px; }
+  .card-body { font-size:14px;color:var(--ink-muted);line-height:1.65;font-weight:300; }
+  .mvt { display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:baseline; }
+  .mvt:last-child { border-bottom:none; }
+  .mvt-num { font-size:11px;color:var(--ink-faint);font-weight:500;min-width:20px; }
+  .mvt-content { flex:1; }
+  .mvt-titre { font-size:14px;font-weight:400;color:var(--ink);margin-bottom:3px; }
+  .mvt-lignes { font-size:12px;color:var(--ink-faint);font-weight:300;margin-bottom:4px; }
+  .mvt-desc { font-size:13px;color:var(--ink-muted);font-weight:300;line-height:1.5; }
+  .procede-list { display:flex;flex-direction:column;gap:10px; }
+  .procede { display:flex;gap:12px;align-items:baseline; }
+  .procede-nom { font-size:13px;font-weight:500;color:var(--ink);min-width:180px;flex-shrink:0; }
+  .procede-effet { font-size:13px;color:var(--ink-muted);font-weight:300;line-height:1.5; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html">← Accueil</a>
+  <span class="nav-sep">/</span>
+  <span class="nav-current">Cahier de Douai</span>
+</nav>
+<main>
+  <div class="texte-header">
+    <p class="texte-oeuvre">Cahier de Douai · Rimbaud</p>
+    <h1 class="texte-titre">Le dormeur du Val</h1>
+    <p class="texte-auteur">Arthur Rimbaud · octobre 1870 — Texte N°2</p>
+  </div>
+
+  <p class="section-label">Extrait</p>
+  <div class="extrait">C'est un trou de verdure où chante une rivière
+Accrochant follement aux herbes des haillons
+D'argent ; où le soleil, de la montagne fière,
+Luit : c'est un petit val qui mousse de rayons.
+
+Un soldat jeune, bouche ouverte, tête nue,
+Et la nuque baignant dans le frais cresson bleu,
+Dort ; il est étendu dans l'herbe, sous la nue,
+Pâle dans son lit vert où la lumière pleut.
+
+Les pieds dans les glaïeuls, il dort. Souriant comme
+Sourirait un enfant malade, il fait un somme :
+Nature, berce-le chaudement : il a froid.
+
+Les parfums ne font pas frissonner sa narine ;
+Il dort dans le soleil, la main sur sa poitrine,
+Tranquille. Il a deux trous rouges au côté droit.</div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <div class="section-title">Introduction</div>
+    <div class="card">
+      <div class="card-head">Situation du texte</div>
+      <div class="card-body">Sonnet écrit en octobre 1870, en pleine guerre franco-prussienne. Rimbaud a 16 ans. Le poème est un anti-poème de guerre : il refuse le discours héroïque en décrivant la mort d'un soldat comme une scène bucolique. La chute finale brutale détruit l'illusion construite tout au long.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">Problématique</div>
+      <div class="card-body">Comment Rimbaud utilise-t-il le cadre idyllique de la nature pour dénoncer l'horreur de la guerre par un effet de contraste radical ?</div>
+    </div>
+    <div class="card">
+      <div class="card-head">Annonce du plan</div>
+      <div class="card-body">I. Un tableau de nature idyllique qui endort la vigilance — II. La révélation finale : le poème comme dénonciation de la guerre.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Mouvements du texte</div>
+    <div class="card" style="padding:0 20px;">
+      <div class="mvt">
+        <span class="mvt-num">I</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">Le cadre naturel lumineux</div>
+          <div class="mvt-lignes">Quatrain 1 (v. 1–4)</div>
+          <div class="mvt-desc">Description du val : lumière, rivière, verdure. Tableau printanier qui installe une atmosphère sereine et trompeuse.</div>
+        </div>
+      </div>
+      <div class="mvt">
+        <span class="mvt-num">II</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">L'apparition du soldat endormi</div>
+          <div class="mvt-lignes">Quatrain 2 + Tercet 1 (v. 5–11)</div>
+          <div class="mvt-desc">Le soldat est introduit avec douceur : il « dort », il sourit. La nature est priée de le bercer. Les indices de mort sont dissimulés sous la métaphore du sommeil.</div>
+        </div>
+      </div>
+      <div class="mvt">
+        <span class="mvt-num">III</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">La chute — la mort révélée</div>
+          <div class="mvt-lignes">Tercet 2 (v. 12–14)</div>
+          <div class="mvt-desc">Les trois derniers vers accumulent les signes de mort avant la chute sèche et brutale du dernier vers : « Il a deux trous rouges au côté droit. »</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Axe I — Le cadre idyllique comme piège</div>
+    <div class="card">
+      <div class="card-head">Une nature lumineuse et maternelle</div>
+      <div class="card-body">Champ lexical de la lumière : « soleil », « rayons », « lumière pleut ». Verbes d'animation : la rivière « chante », le soleil « luit ». La nature semble vivante, accueillante. Elle endort le lecteur dans la même illusion que le soldat semble « dormir ».</div>
+    </div>
+    <div class="card">
+      <div class="card-head">L'euphémisme du sommeil</div>
+      <div class="card-body">Le mot « dort » revient trois fois (v. 7, 9, 13). « Somme », « berce », « tranquille » : tout le lexique du repos innocent. L'apostrophe à la Nature (v. 11) — « berce-le chaudement » — renforce l'illusion : on croit à un enfant fatigué, pas à un mort.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Axe II — La dénonciation de la guerre</div>
+    <div class="card">
+      <div class="card-head">Les indices dissimulés</div>
+      <div class="card-body">Rimbaud glisse des indices que la première lecture masque : « pâle » (v. 8), « il a froid » (v. 11), « les parfums ne font pas frissonner sa narine » (v. 12). Relus après la chute, ces détails prennent leur sens tragique. Le poème se lit deux fois : avant et après.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">La chute comme coup de feu</div>
+      <div class="card-body">Le dernier vers est volontairement sec, clinique, sans métaphore : « Il a deux trous rouges au côté droit. » Après 13 vers de douceur, la brutalité syntaxique mime le choc. C'est un poème anti-militariste qui refuse l'héroïsme : la mort est sordide, pas glorieuse.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Procédés remarquables</div>
+    <div class="card">
+      <div class="procede-list">
+        <div class="procede">
+          <span class="procede-nom">Euphémisme filé</span>
+          <span class="procede-effet">La mort est désignée tout au long par le sommeil. Crée l'illusion idyllique qui rend la chute d'autant plus violente.</span>
+        </div>
+        <div class="procede">
+          <span class="procede-nom">Chute sèche (v. 14)</span>
+          <span class="procede-effet">Rupture de ton brutale. Pas de métaphore, pas d'image : la réalité de la guerre s'impose sans ornement.</span>
+        </div>
+        <div class="procede">
+          <span class="procede-nom">Personnification de la Nature</span>
+          <span class="procede-effet">« Nature, berce-le » : apostrophe pathétique. La nature devient mère protectrice — mais elle ne peut rien contre la mort.</span>
+        </div>
+        <div class="procede">
+          <span class="procede-nom">Antithèse couleurs</span>
+          <span class="procede-effet">Vert (vie, nature) vs rouge (sang, mort). Opposition chromatique qui structure symboliquement tout le poème.</span>
+        </div>
+        <div class="procede">
+          <span class="procede-nom">Répétition de « dort »</span>
+          <span class="procede-effet">Insistance sur l'illusion du sommeil. Chaque occurrence renforce le leurre avant la révélation finale.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Conclusion</div>
+    <div class="card">
+      <div class="card-head">Bilan</div>
+      <div class="card-body">Le dormeur du Val est un poème piège : il attire le lecteur dans un cadre idyllique pour mieux lui révéler l'horreur de la guerre. Rimbaud refuse le discours héroïque et patriotique — la mort d'un soldat n'est pas une gloire mais une obscénité.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">Ouverture</div>
+      <div class="card-body">À mettre en lien avec la poésie de guerre de Wilfred Owen (Dulce et Decorum Est) qui adopte la même stratégie de démystification. Ou avec « À la musique » de Rimbaud : même regard critique sur une société qui ignore ou glorifie ce qu'elle devrait condamner.</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

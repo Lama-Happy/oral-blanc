@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prévost — Manon à Saint-Sulpice</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bg:#f5f3ee;--surface:#faf9f6;--ink:#1a1916;--ink-muted:#6b6760;--ink-faint:#c2bfb8;--rule:#e0ddd6;--serif:'Libre Baskerville',Georgia,serif;--sans:'DM Sans',sans-serif; }
+  html,body { background:var(--bg);color:var(--ink);font-family:var(--sans);min-height:100vh; }
+  nav { padding:16px 40px;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:16px; }
+  nav a { font-size:13px;color:var(--ink-muted);text-decoration:none;transition:color .15s; }
+  nav a:hover { color:var(--ink); }
+  .nav-sep { color:var(--ink-faint);font-size:13px; }
+  .nav-current { font-size:13px;color:var(--ink);font-style:italic;font-family:var(--serif); }
+  main { max-width:720px;margin:0 auto;padding:48px 40px 80px; }
+  .texte-header { margin-bottom:36px; }
+  .texte-oeuvre { font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px; }
+  .texte-titre { font-family:var(--serif);font-size:24px;font-weight:400;font-style:italic;color:var(--ink);line-height:1.3;margin-bottom:6px; }
+  .texte-auteur { font-size:13px;color:var(--ink-muted);font-weight:300; }
+  .section-label { font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:500;margin-bottom:12px; }
+  .extrait { background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--ink-muted);border-radius:0 6px 6px 0;padding:24px 28px;margin-bottom:40px;font-family:var(--serif);font-size:15px;line-height:1.9;color:var(--ink);white-space:pre-wrap; }
+  .sep { border:none;border-top:1px solid var(--rule);margin:32px 0; }
+  .section { margin-bottom:28px; }
+  .section-title { font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:500;margin-bottom:14px;display:flex;align-items:center;gap:10px; }
+  .section-title::after { content:'';flex:1;height:1px;background:var(--rule); }
+  .card { background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px 20px;margin-bottom:10px; }
+  .card-head { font-size:13px;font-weight:500;color:var(--ink);margin-bottom:8px; }
+  .card-body { font-size:14px;color:var(--ink-muted);line-height:1.65;font-weight:300; }
+  .mvt { display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:baseline; }
+  .mvt:last-child { border-bottom:none; }
+  .mvt-num { font-size:11px;color:var(--ink-faint);font-weight:500;min-width:20px; }
+  .mvt-content { flex:1; }
+  .mvt-titre { font-size:14px;font-weight:400;color:var(--ink);margin-bottom:3px; }
+  .mvt-lignes { font-size:12px;color:var(--ink-faint);font-weight:300;margin-bottom:4px; }
+  .mvt-desc { font-size:13px;color:var(--ink-muted);font-weight:300;line-height:1.5; }
+  .procede-list { display:flex;flex-direction:column;gap:10px; }
+  .procede { display:flex;gap:12px;align-items:baseline; }
+  .procede-nom { font-size:13px;font-weight:500;color:var(--ink);min-width:180px;flex-shrink:0; }
+  .procede-effet { font-size:13px;color:var(--ink-muted);font-weight:300;line-height:1.5; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html">← Accueil</a>
+  <span class="nav-sep">/</span>
+  <span class="nav-current">Manon Lescaut</span>
+</nav>
+<main>
+  <div class="texte-header">
+    <p class="texte-oeuvre">Manon Lescaut · Abbé Prévost</p>
+    <h1 class="texte-titre">Manon à Saint-Sulpice</h1>
+    <p class="texte-auteur">Abbé Prévost · 1731 — Texte N°6</p>
+  </div>
+
+  <p class="section-label">Extrait</p>
+  <div class="extrait">[Coller ici l'extrait : Des Grieux, séminariste, est retrouvé par Manon qui vient lui rendre visite à Saint-Sulpice.]</div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <div class="section-title">Introduction</div>
+    <div class="card"><div class="card-head">Situation du texte</div><div class="card-body">Des Grieux, après la première trahison de Manon, s'est réfugié dans les ordres à Saint-Sulpice. Il a renoncé à l'amour. La visite de Manon détruit en quelques instants des mois d'efforts spirituels. Scène de reprise amoureuse qui montre la toute-puissance de la passion sur la vertu.</div></div>
+    <div class="card"><div class="card-head">Problématique</div><div class="card-body">Comment Prévost montre-t-il la puissance irrésistible de la passion amoureuse face à la volonté de renoncement ?</div></div>
+    <div class="card"><div class="card-head">Annonce du plan</div><div class="card-body">I. La résistance de Des Grieux : un équilibre précaire — II. La capitulation : la passion triomphe de la vertu.</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Mouvements du texte</div>
+    <div class="card" style="padding:0 20px;">
+      <div class="mvt">
+        <span class="mvt-num">I</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">La tranquillité retrouvée et ses failles</div>
+          <div class="mvt-lignes">Début du passage</div>
+          <div class="mvt-desc">Des Grieux expose son état d'âme : il croit avoir vaincu sa passion. Mais le narrateur rétrospectif laisse entendre la fragilité de cet équilibre.</div>
+        </div>
+      </div>
+      <div class="mvt">
+        <span class="mvt-num">II</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">L'apparition de Manon</div>
+          <div class="mvt-lignes">Milieu du passage</div>
+          <div class="mvt-desc">La vue de Manon suffit à tout défaire. Même structure que la scène de rencontre : Des Grieux est saisi, dépassé par ce qui lui arrive.</div>
+        </div>
+      </div>
+      <div class="mvt">
+        <span class="mvt-num">III</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">La capitulation et la fuite</div>
+          <div class="mvt-lignes">Fin du passage</div>
+          <div class="mvt-desc">Des Grieux abandonne le séminaire. Sa résolution s'effondre en quelques minutes — la passion est plus forte que la raison et la foi.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Axe I — La fragilité de la vertu</div>
+    <div class="card"><div class="card-head">Un renoncement de façade</div><div class="card-body">Des Grieux a rationalisé sa souffrance mais n'a pas guéri. Son équilibre repose sur l'absence de Manon, pas sur une vraie conversion intérieure. Prévost montre que la vertu n'est possible que dans l'absence de tentation — dès que Manon réapparaît, la résistance s'avère impossible.</div></div>
+    <div class="card"><div class="card-head">La rhétorique du libre arbitre mise en défaut</div><div class="card-body">Au XVIIIe siècle, le débat sur la passion et la liberté est central. Prévost semble donner raison aux déterministes : Des Grieux ne choisit pas, il subit. Mais la narration rétrospective introduit une conscience de soi qui complique ce déterminisme.</div></div>
+  </div>
+  <div class="section">
+    <div class="section-title">Axe II — Manon comme figure de la tentation</div>
+    <div class="card"><div class="card-head">Une séduction sans calcul apparent</div><div class="card-body">Manon ne semble pas calculer : elle pleure, elle supplie. Prévost maintient l'ambiguïté sur ses intentions réelles. Est-elle sincère ou manipulatrice ? Le texte refuse de répondre — ce qui la rend d'autant plus fascinante et dangereuse.</div></div>
+    <div class="card"><div class="card-head">Le corps contre l'esprit</div><div class="card-body">La présence physique de Manon détruit la construction intellectuelle et spirituelle de Des Grieux. C'est une scène de désir qui oppose le corps (passion, sensations) à l'esprit (raison, vertu). Le corps gagne — ce qui est, au fond, le sujet du roman tout entier.</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Procédés remarquables</div>
+    <div class="card"><div class="procede-list">
+        <div class="procede"><span class="procede-nom">Narration rétrospective douloureuse</span><span class="procede-effet">Des Grieux sait déjà qu'il a tort mais raconte quand même. L'ironie tragique est maximale : il voit sa propre faiblesse et ne peut que la raconter.</span></div>
+        <div class="procede"><span class="procede-nom">Vocabulaire de la soudaineté</span><span class="procede-effet">Même lexique que la scène de rencontre : frapper, saisir, bouleverser. La passion obéit à un schéma répétitif — ce qui dit quelque chose sur sa nature compulsive.</span></div>
+        <div class="procede"><span class="procede-nom">Ambiguïté de Manon</span><span class="procede-effet">Son discours et ses pleurs sont rapportés mais leur sincérité n'est jamais certifiée. Prévost laisse le lecteur dans le même doute que Des Grieux.</span></div>
+    </div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Conclusion</div>
+    <div class="card"><div class="card-head">Bilan</div><div class="card-body">Saint-Sulpice confirme la logique fatale du roman : Des Grieux ne peut pas résister à Manon. La scène dit que la passion est plus forte que la foi, la raison et la volonté — ce qui en fait un texte subversif pour son époque.</div></div>
+    <div class="card"><div class="card-head">Ouverture</div><div class="card-body">À rapprocher de la scène de rencontre pour montrer la structure cyclique : coup de foudre, séparation, retrouvailles dévastatrices. Ou avec la problématique du libre arbitre chez Rousseau (La Nouvelle Héloïse) : même tension entre passion et vertu.</div></div>
+  </div>
+</main>
+</body>
+</html>

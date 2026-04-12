@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ponge — Le Pain</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bg:#f5f3ee;--surface:#faf9f6;--ink:#1a1916;--ink-muted:#6b6760;--ink-faint:#c2bfb8;--rule:#e0ddd6;--serif:'Libre Baskerville',Georgia,serif;--sans:'DM Sans',sans-serif; }
+  html,body { background:var(--bg);color:var(--ink);font-family:var(--sans);min-height:100vh; }
+  nav { padding:16px 40px;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:16px; }
+  nav a { font-size:13px;color:var(--ink-muted);text-decoration:none;transition:color .15s; }
+  nav a:hover { color:var(--ink); }
+  .nav-sep { color:var(--ink-faint);font-size:13px; }
+  .nav-current { font-size:13px;color:var(--ink);font-style:italic;font-family:var(--serif); }
+  main { max-width:720px;margin:0 auto;padding:48px 40px 80px; }
+  .texte-header { margin-bottom:36px; }
+  .texte-oeuvre { font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px; }
+  .texte-titre { font-family:var(--serif);font-size:24px;font-weight:400;font-style:italic;color:var(--ink);line-height:1.3;margin-bottom:6px; }
+  .texte-auteur { font-size:13px;color:var(--ink-muted);font-weight:300; }
+  .section-label { font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:500;margin-bottom:12px; }
+  .extrait { background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--ink-muted);border-radius:0 6px 6px 0;padding:24px 28px;margin-bottom:40px;font-family:var(--serif);font-size:15px;line-height:1.9;color:var(--ink);white-space:pre-wrap; }
+  .sep { border:none;border-top:1px solid var(--rule);margin:32px 0; }
+  .section { margin-bottom:28px; }
+  .section-title { font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:500;margin-bottom:14px;display:flex;align-items:center;gap:10px; }
+  .section-title::after { content:'';flex:1;height:1px;background:var(--rule); }
+  .card { background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px 20px;margin-bottom:10px; }
+  .card-head { font-size:13px;font-weight:500;color:var(--ink);margin-bottom:8px; }
+  .card-body { font-size:14px;color:var(--ink-muted);line-height:1.65;font-weight:300; }
+  .mvt { display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:baseline; }
+  .mvt:last-child { border-bottom:none; }
+  .mvt-num { font-size:11px;color:var(--ink-faint);font-weight:500;min-width:20px; }
+  .mvt-content { flex:1; }
+  .mvt-titre { font-size:14px;font-weight:400;color:var(--ink);margin-bottom:3px; }
+  .mvt-lignes { font-size:12px;color:var(--ink-faint);font-weight:300;margin-bottom:4px; }
+  .mvt-desc { font-size:13px;color:var(--ink-muted);font-weight:300;line-height:1.5; }
+  .procede-list { display:flex;flex-direction:column;gap:10px; }
+  .procede { display:flex;gap:12px;align-items:baseline; }
+  .procede-nom { font-size:13px;font-weight:500;color:var(--ink);min-width:180px;flex-shrink:0; }
+  .procede-effet { font-size:13px;color:var(--ink-muted);font-weight:300;line-height:1.5; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html">← Accueil</a>
+  <span class="nav-sep">/</span>
+  <span class="nav-current">Cahier de Douai</span>
+</nav>
+<main>
+  <div class="texte-header">
+    <p class="texte-oeuvre">Le Parti pris des choses · Ponge</p>
+    <h1 class="texte-titre">Le Pain</h1>
+    <p class="texte-auteur">Francis Ponge · 1942 — Texte N°4</p>
+  </div>
+
+  <p class="section-label">Extrait</p>
+  <div class="extrait">La surface du pain est merveilleuse d'abord à cause de cette impression quasi panoramique qu'elle donne : comme si l'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.
+
+Ainsi donc une masse amorphe en train d'éructer fut glissée pour nous dans le four stellaire, où durcissant elle s'est façonnée en vallées, crêtes, ondulations, crevasses. Et tous ces plans dès lors si nettement articulés, ces dalles minces où la lumière avec application couche ses feux, — sans un regard pour la mollesse ignoble sous-jacente.
+
+Ce lâche et froid sous-sol qu'on appelle la mie a son tissu pareil à celui des éponges : feuilles ou fleurs y sont comme des sœurs siamoises soudées par tous les coudes à la fois. Lorsque le pain rassit ces fleurs fanent et se rétrécissent : elles se détachent alors les unes des autres, et la masse en devient friable...
+
+Mais brisons-en là : car le pain doit être dans notre bouche moins objet de respect que de consommation.</div>
+
+  <hr class="sep">
+
+  <div class="section">
+    <div class="section-title">Introduction</div>
+    <div class="card">
+      <div class="card-head">Situation du texte</div>
+      <div class="card-body">Extrait du Parti pris des choses (1942), recueil dans lequel Ponge décrit des objets du quotidien avec une précision quasi scientifique, mais aussi poétique. « Le Pain » est un poème en prose qui prend l'objet le plus banal et le transforme en paysage, en matière à explorer. Le titre annonce la démarche : prendre le parti des choses, leur donner la parole.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">Problématique</div>
+      <div class="card-body">Comment Ponge, en décrivant un objet aussi ordinaire que le pain, renouvelle-t-il le regard poétique et interroge-t-il le rapport entre langage et matière ?</div>
+    </div>
+    <div class="card">
+      <div class="card-head">Annonce du plan</div>
+      <div class="card-body">I. La métamorphose de l'objet banal en paysage grandiose — II. Une poétique de la matière : le langage comme outil d'exploration du réel.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Mouvements du texte</div>
+    <div class="card" style="padding:0 20px;">
+      <div class="mvt">
+        <span class="mvt-num">I</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">La croûte : un panorama géologique</div>
+          <div class="mvt-lignes">§ 1–2</div>
+          <div class="mvt-desc">La surface du pain vue comme un paysage montagneux. La cuisson est décrite comme une éruption géologique qui façonne le relief.</div>
+        </div>
+      </div>
+      <div class="mvt">
+        <span class="mvt-num">II</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">La mie : une matière organique</div>
+          <div class="mvt-lignes">§ 3</div>
+          <div class="mvt-desc">Description de la mie comme tissu vivant, comparable à une éponge ou à des fleurs. Le vieillissement du pain devient flétrissement.</div>
+        </div>
+      </div>
+      <div class="mvt">
+        <span class="mvt-num">III</span>
+        <div class="mvt-content">
+          <div class="mvt-titre">La chute : retour au réel</div>
+          <div class="mvt-lignes">§ 4</div>
+          <div class="mvt-desc">Ponge clôt le texte par une pirouette : le pain est fait pour être mangé, pas contemplé. Le poème s'autodétruit ironiquement.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Axe I — L'objet banal transfiguré</div>
+    <div class="card">
+      <div class="card-head">Le pain comme paysage géologique</div>
+      <div class="card-body">Comparaison avec les Alpes, le Taurus, la Cordillère des Andes : l'hyperbole géographique transforme la croûte du pain en chaîne de montagnes. La cuisson devient éruption volcanique (« éructer »), le four devient « stellaire ». Ponge fait du microscopique un macrocosme : le pain contient le monde.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">La mie comme organisme vivant</div>
+      <div class="card-body">Métaphore filée : la mie est comparée à une éponge, à des fleurs, à des « sœurs siamoises ». Le pain est vivant, organique, il vieillit (« fleurs fanent »). Ponge lui confère une intériorité, une biologie. L'objet inerte devient être.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Axe II — Une poétique de la matière</div>
+    <div class="card">
+      <div class="card-head">Le langage comme instrument de précision</div>
+      <div class="card-body">Ponge multiplie les termes techniques et géologiques (« dalles », « ondulations », « crevasses ») mais aussi les images poétiques. La prose est à mi-chemin entre le traité scientifique et le poème : elle veut épuiser l'objet par le langage, l'atteindre dans sa matérialité.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">La chute ironique comme méta-commentaire</div>
+      <div class="card-body">« Brisons-en là » : Ponge interrompt brusquement son exploration. Le dernier paragraphe rappelle que le pain est fait pour être consommé, non décrit. C'est un commentaire sur la poésie elle-même : peut-on vraiment épuiser un objet par les mots ? Le texte s'autodésigne comme insuffisant — geste d'humilité ou d'ironie.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Procédés remarquables</div>
+    <div class="card">
+      <div class="procede-list">
+        <div class="procede">
+          <span class="procede-nom">Hyperbole géographique</span>
+          <span class="procede-effet">Alpes, Taurus, Cordillère des Andes pour décrire une croûte de pain : l'objet minuscule prend une dimension cosmique. Renversement de perspective radical.</span>
+        </div>
+        <div class="procede">
+          <span class="procede-nom">Métaphore filée (organisme)</span>
+          <span class="procede-effet">Éponge, fleurs, sœurs siamoises : la mie est vivante. Ponge dote l'objet inerte d'une biologie, lui prête une existence.</span>
+        </div>
+        <div class="procede">
+          <span class="procede-nom">Registre scientifique mêlé au lyrique</span>
+          <span class="procede-effet">« Tissu », « plans articulés » vs « merveilleuse », « feux ». Le poème oscille entre description objective et émerveillement : c'est le propre du regard ponguien.</span>
+        </div>
+        <div class="procede">
+          <span class="procede-nom">Chute auto-ironique</span>
+          <span class="procede-effet">Le dernier paragraphe détruit l'édifice poétique construit : le pain est fait pour être mangé. Geste méta-poétique qui interroge la fonction de la description.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Conclusion</div>
+    <div class="card">
+      <div class="card-head">Bilan</div>
+      <div class="card-body">Ponge transforme l'objet le plus quotidien en territoire poétique : le pain devient paysage, organisme, matière à explorer. La démarche révèle que la poésie n'est pas dans les grands sujets mais dans la précision du regard posé sur le monde ordinaire.</div>
+    </div>
+    <div class="card">
+      <div class="card-head">Ouverture</div>
+      <div class="card-body">À rapprocher de Rimbaud (Ma bohème) : les deux poètes trouvent la poésie dans le quotidien et le concret, mais par des voies opposées — Rimbaud par le lyrisme du corps vécu, Ponge par la description précise de l'objet. On peut aussi évoquer le mouvement chosiste et le Nouveau Roman (Robbe-Grillet).</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
