@@ -1,0 +1,42 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:#f5f3ee; --surface:#faf9f6; --ink:#1a1916; --ink-muted:#6b6760;
+  --ink-faint:#c2bfb8; --rule:#e0ddd6;
+  --serif:'Libre Baskerville',Georgia,serif; --sans:'DM Sans',sans-serif;
+}
+html,body { background:var(--bg);color:var(--ink);font-family:var(--sans);min-height:100vh; }
+nav { padding:16px 40px;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:16px; }
+nav a { font-size:13px;color:var(--ink-muted);text-decoration:none;transition:color .15s; }
+nav a:hover { color:var(--ink); }
+.nav-sep { color:var(--ink-faint);font-size:13px; }
+.nav-current { font-size:13px;color:var(--ink);font-style:italic;font-family:var(--serif); }
+main { max-width:720px;margin:0 auto;padding:48px 40px 80px; }
+.texte-header { margin-bottom:36px; }
+.texte-oeuvre { font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px; }
+.texte-titre { font-family:var(--serif);font-size:24px;font-weight:400;font-style:italic;color:var(--ink);line-height:1.3;margin-bottom:6px; }
+.texte-auteur { font-size:13px;color:var(--ink-muted);font-weight:300; }
+
+/* Extrait */
+.section-label { font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:500;margin-bottom:12px; }
+.extrait { background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--ink-muted);border-radius:0 6px 6px 0;padding:24px 28px;margin-bottom:40px;font-family:var(--serif);font-size:15px;line-height:1.9;color:var(--ink);white-space:pre-wrap; }
+.sep { border:none;border-top:1px solid var(--rule);margin:40px 0; }
+
+/* Analyse en prose */
+.analyse { }
+.analyse-section { margin-bottom:40px; }
+.analyse-label {
+  font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);
+  font-weight:500;margin-bottom:20px;display:flex;align-items:center;gap:10px;
+}
+.analyse-label::after { content:'';flex:1;height:1px;background:var(--rule); }
+
+.analyse p {
+  font-size:15px;line-height:1.85;color:var(--ink-muted);font-weight:300;
+  margin-bottom:1.2em;
+}
+.analyse p:last-child { margin-bottom:0; }
+
+.mvt-titre-inline {
+  font-family:var(--serif);font-size:13px;font-weight:700;font-style:italic;
+  color:var(--ink);
+}
